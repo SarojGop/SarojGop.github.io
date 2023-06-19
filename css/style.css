@@ -333,6 +333,7 @@ footer {
         flex-direction: column;
         margin: 5px auto;
         padding: 5px ;
+        max-width: 100%;
         justify-content: center;
     }
 
@@ -344,11 +345,12 @@ footer {
     }
 
     .sidebar {
+        max-width: 100%;
 
         padding: 5px;
         display: flex;
         justify-content: center;
-        margin-left: 50px;
+        margin: auto;
     }
 
     .sidebar-image-continer {
@@ -411,9 +413,16 @@ footer {
 
     /* main */
     main {
-        max-width: var(--nav-min-width);
-        padding: auto;
+        max-width: 100%;
+        justify-content: center;
+        padding: 10px;
+
+        
        
+    }
+    .col3{
+        max-width: 100%;
+        justify-content: center;
     }
 
     .box {
@@ -441,5 +450,44 @@ footer {
 
    
    
+
+}
+
+@media(min-width: 810px) and (max-width:850px) {
+    header{
+        left: 0;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 5px auto;
+        padding: 5px ;
+        justify-content: center;
+        max-width: 100%;
+    }
+    .namediv{
+        margin-left: 5px;
+    }
+    .sidebar{
+        justify-content: center;
+        margin: auto;
+
+    }
+    main{
+        max-width: 100%;
+        margin: auto;
+    }
+    .box{
+        max-width: 100%;
+    }
+    .col3{
+        max-width: 100%;
+    }
+    .box {
+        padding: 10px;
+        background-color: var(--primary-color);
+        border-radius: 5px;
+        margin: auto;
+    }
 
 }
