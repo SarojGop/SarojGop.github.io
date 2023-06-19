@@ -1,1 +1,379 @@
-Hello World
+</html>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<script>
+
+    function refreshPage() {
+        location.reload();
+    }
+
+    //for sections
+    function showSection(sectionId) {
+
+
+        // Get all section elements
+        var sections = document.getElementsByClassName("section");
+
+        // Hide all sections
+        for (var i = 0; i < sections.length; i++) {
+            sections[i].classList.remove("active");
+        }
+        // Show the selected section
+        var selectedSection = document.getElementById(sectionId);
+        if (selectedSection) {
+            selectedSection.classList.add("active");
+        } else {
+            var welcomeSection = document.getElementById("welcome");
+            welcomeSection.classList.add("active");
+        }
+
+    }
+
+</script>
+
+<body>
+    <header>
+
+
+        <div class="namediv">
+            <button class="namebutton" onclick="refreshPage()">Saroj Gopali</button>
+
+        </div>
+        <nav>
+
+            <ul>
+                <li><button onclick="showSection('about')">About</button></li>
+                <li><button onclick="showSection('experience')">Experience</button></li>
+                <li><button onclick="showSection('research')">Research</button></li>
+                <li><button onclick="showSection('projects')">Projects</button></li>
+            </ul>
+        </nav>
+
+
+
+    </header>
+
+
+    <div class="container">
+        <div class="sidebar">
+
+            <div style="margin-top: 10%; justify-content: center;">
+                <img class="profile-picture" src="images/Saroj_pic2.jpeg" alt="Profile Picture">
+            </div>
+            <div style="margin-top: 15px;">
+                <h2> Saroj Gopali</h2>
+                <h3>Ph.d Candidate</h3>
+                <h3>Lubbock, Texas, USA</h3>
+
+
+            </div>
+
+        </div>
+
+
+        <main>
+
+
+
+
+            <div class="sections">
+                <div id="about" class="section">
+                    <div class="col3">
+                        <div class="box">
+                            <h2>About Me</h2>
+                            <p> I am a Ph.D. candidate in the Department of Computer Science at Texas Tech University in
+                                Lubbock, Texas, USA.
+
+                                I holds a Master of Science in Software Engineering from Texas Tech University,
+                                where I worked on detecting anomalies in time series data using deep learning
+                                algorithms.
+                                I also holds a Bachelor of Science in Computer Science from the Texas Tech University.
+                                My research interests include multidisciplinary research on social engineering attacks
+                                involving human factors.
+                                I am open to collaborative research in the field of social engineering attacks involving
+                                human factors,
+                                utilizing cutting-edge tools and techniques such as Large Language Models and Natural
+                                Language Processing (NLP).
+
+
+                            </p>
+
+                            <h2>Skills: </h2>
+                            <p> Java, Python, Familiar with C, Objective -C, JavaScript, Spark, HTML, CSS, SQL, Linux,
+                                Time series Analysis, Deep learning, Multiprocessing,
+                                GitHub action, Kubernetes, Docker, Kubeflow, NLP, Pytorch, Tensorflow, Django, familar
+                                wit Large Language
+                                Models.</p>
+
+                            <!-- <ul>
+                                <li>Award or accomplishment 1</li>
+                                <li>Award or accomplishment 2</li>
+                                <li>Award or accomplishment 3</li>
+                            </ul> -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="experience" class="section">
+                    <div class="col3">
+
+                        <div class="box">
+
+                            <h2>Research Assistant at Texas Tech University &ensp; (Feburary 2022 - Present) </h2>
+                            <ul>
+                                <li>Conduct research on Human Factors in Cybersecurity and Social Engineering Attacks
+                                    utilizing Natural
+                                    Language Processing and Deep Learning techniques.</li>
+                                <li>Created a prototype leveraging cutting-edge technologies such as Large
+                                    Language Model, Django, AWS, and Azure.</li>
+                            </ul>
+
+                            <br>
+
+                            <h2>Entrepreneur Lead at National Science Foundation's Innovation Corps (I-Corps) &ensp;
+                                (June 2022 - July 2022) </h2>
+                            <ul>
+                                <li>Conduct 100+ interviews with cybersecurity professionals, CEOs, CTOs, and insurance
+                                    professionals to evaluate
+                                    30+ hypotheses on services related to social engineering attack prevention.</li>
+                                <li>Coordinated and conducted interviews during the seven-week intensive phase, spoke
+                                    with the team,
+                                    updated the business model canvas, and presented.</li>
+                            </ul>
+
+                            <br>
+                            <h2>Software Intern at Nemalife,Inc &ensp; (June 2021 - August 2022) </h2>
+                            <ul>
+                                <li>Developed the CI/CD using Microk8s Kubernetes in BareMetal Linux sever.
+                                    Preprocess the data, annotated data, store data in
+                                    Dropbox and train worm detection model in retiannet50fpn using pytorch and
+                                    pytorch lightning in python where loss is 0.047%</li>
+                                <li>Create the digit detection interface using easyocr and fastapi in python for multi
+                                    thread.</li>
+                                <li>Technologies used: Dropbox API, Pickle,
+                                    Jupyter Notebook, AWS EC2, GitHub, LabelImg, Ingress load balance, Yaml, Jupyter
+                                    notebook, GitHub, Docker.</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="research" class="section">
+                    <div class="col3">
+                        <div class="box">
+                            <h2>Research Publications</h2>
+                            <p>My publications have published in various conferences and journals.</p>
+                            <ul>
+                                <h2>"Deep Learning Based Timeseries Analysis for Detecting Anomalies in Internet of
+                                    Things", Electronics 2022.
+                                </h2>
+                                <li><a href="https://www.mdpi.com/2079-9292/11/19/3205" target="_blank"
+                                        style="color: white;">
+                                        Publication Link</a></li>
+
+                                <br>
+                                <h2>"Vulnerability Detection in Smart Contracts Using Deep Learning"
+                                    , 2022 IEEE 46th Annual Computers, Software, and Applications Conference.</h2>
+
+                                <li><a href="https://ieeexplore.ieee.org/document/9842527" target="_blank"
+                                        style="color: white;">
+                                        Publication Link</a></li>
+                                <br>
+
+                                <h2>A Comparison of TCN and LSTM models in Detecting Anomalies in Time Series Data",
+                                    2021 IEEE International Conference on Big Data.</h2>
+                                <li><a href="https://ieeexplore.ieee.org/document/9671488" target="_blank"
+                                        style="color: white;">
+                                        Publication Link</a></li>
+
+                                <br>
+                                <h2>"HyPA: A Hybrid Password-Based Authentication Mechanism", Advances in Information
+                                    and Communication 2021</h2>
+                                <li><a href="https://www.researchgate.net/profile/Saroj-Gopali/publication/350832061_HyPA_A_Hybrid_Password-Based_Authentication_Mechanism/links/6258ce2f709c5c2adb7c9643/HyPA-A-Hybrid-Password-Based-Authentication-Mechanism.pdf"
+                                        target="_blank" style="color:white"> Publication Link </a></li>
+                            </ul>
+
+
+                            <br>
+                            <h2>Peer Review Contribution</h2>
+                            <p>I have had the opportunity to review research papers from the following
+                                conferences/journals.</p>
+                            <ul>
+                                <li><a href="https://www.mdpi.com/journal/sustainability" target="_blank"
+                                        style="color: white;">
+                                        MDPI Sustainability - 2023 - (1)</a></li>
+
+                                <li><a href="https://www.mdpi.com/journal/electronics" target="_blank"
+                                        style="color: white;">
+                                        MDPI Electronices - 2023 - (2) </a></li>
+
+                                <li><a href="https://www.mdpi.com/journal/Processes" target="_blank"
+                                        style="color: white;">
+                                        MDPI Processes - 2023 - (1)</a></li>
+
+                                <li><a href="https://www.mdpi.com/journal/IoT" target="_blank" style="color: white;">
+                                        MDPI IoT - 2023 - (1) </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="projects" class="section">
+                    <div class="col3">
+                        <div class="box">
+                            <h2>Stock Price Prediction Machine Learning Algorithm </h2>
+                            <p>Taught myself Autoregressive Intergraded Moving Average (ARIMA) and Recurrent Neural
+                                Network to Implemented Univariate
+                                Long Short-Term Memory (LSTM) using Keras package to build the model in R programming
+                                Language, which results has 10%
+                                error percentage. </p>
+                            <ul>
+                                <li>Technologies used: R, Shiny Dashboard, Keras, TensorFlow, Yahoo Finance, Docker,
+                                    GitHub.</li>
+                                <li><a href="https://github.com/SarojGop/Stock-Prediction-Machine-Learning-Algorithm-"
+                                        target="_blank" style="color:white"> GitHub Link </a></li>
+                            </ul>
+                            <br>
+
+
+                            <h2>HyPA: A Hybrid Password-Based Authentication Mechanism </h2>
+                            <p>Collaborated research Team on “HyPA: A Hybrid Password-Based Authentication Mechanism”
+                                using a survey report conducted at
+                                LaGuardia Community College. Presented research in college workshops and professional
+                                conferences.
+                            </p>
+                            <ul>
+                                <li>Coded in Swift to convert image to hash value and concatenate with text password
+                                    together to create password which is 45% secure
+                                    compared to text-based password.</li>
+                                <li> Technologies used: Swift, Firebase, Bitbucket, XCode.</li>
+                                <li><a href="https://github.com/SarojGop/Hybrid-Password-Mechanism" target="_blank"
+                                        style="color:white"> GitHub Link </a></li>
+
+                                <li><a href="https://www.researchgate.net/profile/Saroj-Gopali/publication/350832061_HyPA_A_Hybrid_Password-Based_Authentication_Mechanism/links/6258ce2f709c5c2adb7c9643/HyPA-A-Hybrid-Password-Based-Authentication-Mechanism.pdf"
+                                        target="_blank" style="color:white"> Publication Link </a></li>
+
+
+                            </ul>
+
+                            <br>
+                            <h2>Big Blue Button App </h2>
+                            <p>Created the portable Alarm System using Hardware (Raspberry Pi 4) and software within
+                                Python. Taught myself Raspberry Pi to
+                                implemented face detection using OpenCV, face recognition using AWS tools. Developed the
+                                UI using Android Studio (Java).
+                            </p>
+                            <ul>
+                                <li>Technologies used: Firebase, Rekognition, OpenCV, AWS S3 Bucket and Twilio API, Pi
+                                    camera motion sensor.</li>
+                                <li> Technologies used: Swift, Firebase, Bitbucket, XCode.</li>
+
+                            </ul>
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div id="welcome" class="section active">
+                    <div class="col3">
+                        <div class="welcomimage">
+                            <h2 style="text-align: center; font-size: medium;margin-bottom: 30px; font-style:italic;">
+                                Thank you for visiting my website.<br>Take your time to
+                                explore more about me, browse through <br> my experiences, research and check out my
+                                projects.
+                            </h2>
+
+
+                            <div class="slider">
+                                <span id="slide-1"></span>
+                                <span id="slide-2"></span>
+                                <span id="slide-3"></span>
+                                <div class="image-container">
+                                    <img src="images/riskcuers.png" class="slide" width="500" height="300" />
+                                    <img src="images/se.png" class="slide" width="500" height="300" />
+                                </div>
+                                <div class="slide-buttons">
+                                    <a href="#slide-1">1</a>
+                                    <a href="#slide-2">2</a>
+
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+        </main>
+
+
+    </div>
+    <footer>
+        <hr class="footer-line">
+
+        <div class="footer-button">
+            <ul>
+
+                <li><button onclick="window.open('https://www.linkedin.com/in/saroj-gopali');" target="_blank"
+                        rel="noopener noreferrer"> <i class="fa fa-linkedin-square icon-size"></i></button></li>
+
+
+                <li><button onclick="window.open('https://github.com/sarojgop');" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa fa-github icon-size"></i></button></li>
+
+                <li><button onclick="window.open('https://scholar.google.com/citations?user=Zt79RTIAAAAJ&hl=en&oi=ao');"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="ai ai-google-scholar-square ai-2x icon-size"></i></button></li>
+
+                <li><button onclick="parent.location='mailto:sarojDOTgopaliATttuDOTedu'"><i
+                            class="fa fa-envelope icon-size"></i></button></li>
+
+
+            </ul>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>
