@@ -6,7 +6,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
@@ -16,36 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-
-<script>
-
-    function refreshPage() {
-        location.reload();
-    }
-
-    //for sections
-    function showSection(sectionId) {
-
-
-        // Get all section elements
-        var sections = document.getElementsByClassName("section");
-
-        // Hide all sections
-        for (var i = 0; i < sections.length; i++) {
-            sections[i].classList.remove("active");
-        }
-        // Show the selected section
-        var selectedSection = document.getElementById(sectionId);
-        if (selectedSection) {
-            selectedSection.classList.add("active");
-        } else {
-            var welcomeSection = document.getElementById("welcome");
-            welcomeSection.classList.add("active");
-        }
-
-    }
-
-</script>
+<script src="css/myscripts.js"></script>
 
 <body>
     <header>
@@ -73,10 +44,10 @@
     <div class="container">
         <div class="sidebar">
 
-            <div style="margin-top: 10%; justify-content: center;">
+            <div class="sidebar-image-continer">
                 <img class="profile-picture" src="images/Saroj_pic2.jpeg" alt="Profile Picture">
             </div>
-            <div style="margin-top: 15px;">
+            <div class="sidebar-text">
                 <h2> Saroj Gopali</h2>
                 <h3>Ph.d Candidate</h3>
                 <h3>Lubbock, Texas, USA</h3>
@@ -304,7 +275,7 @@
                 <div id="welcome" class="section active">
                     <div class="col3">
                         <div class="welcomimage">
-                            <h2 style="text-align: center; font-size: medium;margin-bottom: 30px; font-style:italic;">
+                            <h2>
                                 Thank you for visiting my website.<br>Take your time to
                                 explore more about me, browse through <br> my experiences, research and check out my
                                 projects.
@@ -359,7 +330,7 @@
                         target="_blank" rel="noopener noreferrer">
                         <i class="ai ai-google-scholar-square ai-2x icon-size"></i></button></li>
 
-                <li><button onclick="parent.location='mailto:sarojDOTgopaliATttuDOTedu'"><i
+                <li><button onclick="generateEmail()"><i
                             class="fa fa-envelope icon-size"></i></button></li>
 
 
