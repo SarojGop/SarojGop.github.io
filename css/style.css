@@ -195,18 +195,6 @@ body {
     border: 3px solid var(--card-bg);
 }
 
-/* .hero-image::after {
-    content: '';
-    position: absolute;
-    top: -8px;
-    left: -8px;
-    right: -8px;
-    bottom: -8px;
-    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
-    border-radius: 50%;
-    opacity: 0.1;
-    z-index: -1;
-} */
 
 .hero-image::before {
     content: '';
@@ -269,15 +257,36 @@ body {
     font-size: 1.5rem;
     cursor: pointer;
     padding: 0.5rem;
+    position: absolute;
+    right: 1rem;
+}
+
+.close-menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    position: absolute;
+    right: 60px;
 }
 
 @media (max-width: 768px) {
+    .main-content{
+        padding:0;
+    }
     .mobile-menu-button {
         display: block;
+        height: 50%;
+        right: 1rem;
+        
     }
 
     .side-nav {
         justify-content: space-between;
+        padding: 0 1rem;
     }
 
     .nav-header {
@@ -288,17 +297,21 @@ body {
         display: none;
         position: absolute;
         top: var(--header-height);
-        left: 0;
-        width: 100%;
+        right: 0;
+        width: 30%;
         background: var(--card-bg);
         padding: 1rem;
-        flex-direction: column;
         box-shadow: var(--shadow-md);
+        flex-direction: column;
         gap: 1rem;
+        z-index: 1000;
+        transition: transform 0.3s ease;
+        transform: translateX(100%);
     }
 
     .nav-links.active {
         display: flex;
+        transform: translateX(0);
     }
 
     .nav-link {
@@ -320,12 +333,8 @@ body {
     }
 
     .hero-image {
-        width: 160px;
-        height: 160px;
-    }
-
-    .hero-content {
-        text-align: center;
+        width: 50%;
+        height: auto;
     }
 
     .hero-section h1 {
@@ -339,6 +348,16 @@ body {
     .hero-content::after {
         left: 50%;
         transform: translateX(-50%);
+    }
+    .skill-item{
+        gap: 5px;
+    }
+    .skills-container{
+       padding: 0;
+    }
+
+    .close-menu-button {
+        display: block;
     }
 }
 

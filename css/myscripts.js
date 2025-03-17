@@ -54,3 +54,22 @@ function generateEmail() {
     alert('Email address copied to clipboard!');
 }
 
+
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    const closeButton = document.querySelector('.close-menu-button');
+    
+    navLinks.classList.toggle('active');
+    
+    // Toggle the display of the close button
+    if (navLinks.classList.contains('active')) {
+        closeButton.style.display = 'block'; // Show close button
+    } else {
+        closeButton.style.display = 'none'; // Hide close button
+    }
+}
+
+// function showSection(section) {
+//     alert(`Showing ${section} section!`); // Placeholder for section navigation
+// }
+
