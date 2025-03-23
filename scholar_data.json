@@ -1,9 +1,9 @@
 {
-  "last_updated": "2025-03-14T13:22:50.116588",
+  "last_updated": "2025-03-23T02:00:48.942760",
   "data": {
     "name": "Saroj Gopali",
     "affiliation": "Texas Tech University",
-    "citations": 134,
+    "citations": 135,
     "h_index": 5,
     "i10_index": 4,
     "interests": [
@@ -16,7 +16,7 @@
         "authors": "Saroj Gopali and Faranak Abri and Sima Siami-Namini and Akbar Siami Namin",
         "venue": "",
         "year": "",
-        "citations": 76,
+        "citations": 75,
         "url": "https://ieeexplore.ieee.org/abstract/document/9671488/"
       },
       {
@@ -32,7 +32,7 @@
         "authors": "Bipin Chhetri and Saroj Gopali and Rukayat Olapojoye and Samin Dehbashi and Akbar Siami Namin",
         "venue": "",
         "year": "",
-        "citations": 15,
+        "citations": 16,
         "url": "https://ieeexplore.ieee.org/abstract/document/10196842/"
       },
       {
@@ -40,7 +40,7 @@
         "authors": "Saroj Gopali and Zulfiqar Ali Khan and Bipin Chhetri and Bimal Karki and Akbar Siami Namin",
         "venue": "",
         "year": "",
-        "citations": 13,
+        "citations": 14,
         "url": "https://ieeexplore.ieee.org/abstract/document/9842527/"
       },
       {
