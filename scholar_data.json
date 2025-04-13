@@ -1,9 +1,9 @@
 {
-  "last_updated": "2025-04-06T02:02:00.034650",
+  "last_updated": "2025-04-13T03:23:21.829318",
   "data": {
     "name": "Saroj Gopali",
     "affiliation": "Texas Tech University",
-    "citations": 138,
+    "citations": 141,
     "h_index": 5,
     "i10_index": 4,
     "interests": [
@@ -16,7 +16,7 @@
         "authors": "Saroj Gopali and Faranak Abri and Sima Siami-Namini and Akbar Siami Namin",
         "venue": "",
         "year": "",
-        "citations": 78,
+        "citations": 79,
         "url": "https://ieeexplore.ieee.org/abstract/document/9671488/"
       },
       {
@@ -64,7 +64,7 @@
         "authors": "Saroj Gopali and Sima Siami-Namini and Faranak Abri and Akbar Siami Namin",
         "venue": "",
         "year": "",
-        "citations": 1,
+        "citations": 2,
         "url": "https://www.sciencedirect.com/science/article/pii/S2949719124000682"
       },
       {
@@ -80,7 +80,7 @@
         "authors": "Saroj Gopali and Sima Siami-Namini and Faranak Abri and Akbar Siami Namin",
         "venue": "",
         "year": "",
-        "citations": 0,
+        "citations": 1,
         "url": "https://ieeexplore.ieee.org/abstract/document/10640372/"
       },
       {
