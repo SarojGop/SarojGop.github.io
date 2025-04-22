@@ -5,7 +5,7 @@ from datetime import datetime
 import os
 import time
 
-def get_scholar_info(scholar_id='Zt79RTIAAAAJ', max_retries=3):
+def get_scholar_info(scholar_id='Zt79RTIAAAAJ', max_retries=5):
     """Fetch Google Scholar information with retries"""
     for attempt in range(max_retries):
         try:
