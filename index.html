@@ -1,89 +1,122 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Saroj Gopali - PhD Candidate in Computer Science, Research in Social Engineering and Cybersecurity" name="description"/>
-<title>Saroj Gopali - Academic Portfolio</title>
-<!-- Fonts and Icons -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-<link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet"/>
-<!-- Custom CSS -->
-<link href="css/style.css" rel="stylesheet"/>
-</head>
-<body>
-<nav class="side-nav">
-<div class="nav-content">
-<div class="nav-header">
-<h1>
-<a onclick="showSection('about')"> Saroj Gopali </a>
-</h1>
-<button aria-label="Toggle Navigation" class="mobile-menu-button" onclick="toggleMenu()">
-<i class="fas fa-bars"></i> <!-- Font Awesome icon for the menu -->
-</button>
-<button aria-label="Close Navigation" class="close-menu-button" onclick="toggleMenu()" style="display: none;">
-<i class="fas fa-times"></i> <!-- Font Awesome icon for close -->
-</button>
-</div>
-<ul class="nav-links">
-<li>
-<button class="nav-link" onclick="showSection('about')">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="Saroj Gopali - PhD Candidate in Computer Science, Research in Social Engineering and Cybersecurity"
+      name="description"
+    />
+    <title>Saroj Gopali - Academic Portfolio</title>
+    <!-- Fonts and Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <nav class="side-nav">
+      <div class="nav-content">
+        <div class="nav-header">
+          <h1>
+            <a onclick="showSection('about')"> Saroj Gopali </a>
+          </h1>
+          <button class="mobile-menu-button" aria-label="Toggle Navigation" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i> <!-- Font Awesome icon for the menu -->
+          </button>
+          <button class="close-menu-button" aria-label="Close Navigation" onclick="toggleMenu()" style="display: none;">
+            <i class="fas fa-times"></i> <!-- Font Awesome icon for close -->
+          </button>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <button class="nav-link" onclick="showSection('about')">
               About
             </button>
-</li>
-<li>
-<button class="nav-link" onclick="showSection('research')">
+          </li>
+          <li>
+            <button class="nav-link" onclick="showSection('research')">
               Research
             </button>
-</li>
-<li>
-<button class="nav-link" onclick="showSection('experience')">
+          </li>
+          <li>
+            <button class="nav-link" onclick="showSection('experience')">
               Experience
             </button>
-</li>
-<li>
-<button class="nav-link" onclick="showSection('projects')">
+          </li>
+          <li>
+            <button class="nav-link" onclick="showSection('projects')">
               Projects
             </button>
-</li>
-</ul>
-</div>
-</nav>
-<main class="main-content">
-<section class="hero-section">
-<div class="hero-image">
-<img alt="Saroj Gopali" src="images/saroj_pic1.jpeg"/>
-</div>
-<div class="hero-content">
-<h1>Saroj Gopali, PhD</h1>
-<p class="title">
-            Post Doctoral Research Associate<br/>Texas Tech University
+          </li>
+          
+        </ul>
+        
+      </div>
+    </nav>
+    <main class="main-content">
+      <section class="hero-section">
+        <div class="hero-image">
+          <img src="images/saroj_pic1.jpeg" alt="Saroj Gopali" />
+        </div>
+        <div class="hero-content">
+          <h1>Saroj Gopali, PhD</h1>
+          <p class="title">
+            Post Doctoral Research Associate<br />Texas Tech University
           </p>
-</div>
-<div class="social-icons_top">
-<a aria-label="LinkedIn Profile" href="https://www.linkedin.com/in/saroj-gopali" rel="noopener noreferrer" target="_blank">
-<i class="fab fa-linkedin-in"></i>
-</a>
-<a aria-label="GitHub Profile" href="https://github.com/sarojgop" rel="noopener noreferrer" target="_blank">
-<i class="fab fa-github"></i>
-</a>
-<a aria-label="Google Scholar Profile" href="https://scholar.google.com/citations?user=Zt79RTIAAAAJ&amp;hl=en&amp;oi=ao" rel="noopener noreferrer" target="_blank">
-<i class="ai ai-google-scholar"></i>
-</a>
-<a aria-label="ResearchGate Profile" href="https://www.researchgate.net/profile/Saroj-Gopali" rel="noopener noreferrer" target="_blank">
-<i class="ai ai-researchgate"></i>
-</a>
-</div>
-</section>
-<section class="section" id="about">
-<div class="section-inner">
-<div class="section-header">
-<!-- <span class="section-label">About</span> -->
-<h2>Background &amp; Research Focus</h2>
-</div>
-<div class="content-block">
-<p class="lead">
+        </div>
+          <div class="social-icons_top">
+            <a
+              href="https://www.linkedin.com/in/saroj-gopali"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn Profile"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/sarojgop"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub Profile"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://scholar.google.com/citations?user=Zt79RTIAAAAJ&hl=en&oi=ao"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Google Scholar Profile"
+            >
+              <i class="ai ai-google-scholar"></i>
+            </a>
+            
+            <a
+              href="https://www.researchgate.net/profile/Saroj-Gopali"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="ResearchGate Profile"
+            >
+              <i class="ai ai-researchgate"></i>
+            </a>
+          </div>
+      
+      </section>
+      <section class="section" id="about">
+        <div class="section-inner">
+          <div class="section-header">
+            <!-- <span class="section-label">About</span> -->
+            <h2>Background &amp; Research Focus</h2>
+          </div>
+          <div class="content-block">
+            <p class="lead">
               I am a Postdoctoral Research Associate at Texas Tech University ,
               passionate about advancing technology through data-driven research
               and innovation. I am hold PhD in Computer Science from Texas Tech
@@ -91,7 +124,7 @@
               language processing, Large Language Models, Time Series Analysis,
               and human-computer interaction to enhance cybersecurity measures.
             </p>
-<p>
+            <p>
               With a Master of Science in Software Engineering from Texas Tech
               University, I have extensive experience in detecting anomalies in
               time series data using deep learning algorithms. My current
@@ -100,454 +133,149 @@
               cutting-edge tools such as Large Language Models and Natural
               Language Processing (NLP).
             </p>
-</div>
-<div class="section-header">
-<h2>Research Interests</h2>
-</div>
-<div class="skills-container">
-<div class="skill-group">
-<!-- <div class="skill-header">
-                <i class="fas fa-brain"></i>
-                <h3>Research Areas</h3>
-              </div> -->
-<div class="skill-items">
-<div class="skill-item">
-<i class="fas fa-lightbulb"></i>
-<strong>Cybersecurity:</strong> Developing solutions to safeguard systems against cyber threats and vulnerabilities.
+          </div>
+          <div class="section-header">
+            <h2>Research Interests</h2>
+          </div>
+          <div class="skills-container">
+            <div class="skill-group">
+              
+              <div class="skill-items">
+                <div class="skill-item">
+                  <i class="fas fa-lightbulb"></i>
+                  <strong>Cybersecurity:</strong> Developing solutions to safeguard systems against cyber threats and vulnerabilities.
                 </div>
-<div class="skill-item">
-<i class="fas fa-brain"></i>
-<strong>Deep Learning:</strong> Enhancing predictive accuracy through advanced neural network architectures.
+                <div class="skill-item">
+                  <i class="fas fa-brain"></i>
+                  <strong>Deep Learning:</strong> Enhancing predictive accuracy through advanced neural network architectures.
                 </div>
-<div class="skill-item">
-<i class="fas fa-comments"></i>
-<strong>Natural Language Processing:</strong> Utilizing NLP techniques for language analysis and generation.
+                <div class="skill-item">
+                  <i class="fas fa-comments"></i>
+                  <strong>Natural Language Processing:</strong> Utilizing NLP techniques for language analysis and generation.
                 </div>
-<div class="skill-item">
-<i class="fas fa-chart-line"></i>
-<strong>Time Series Analysis:</strong> Analyzing temporal data to identify trends and anomalies.
+                <div class="skill-item">
+                  <i class="fas fa-chart-line"></i>
+                  <strong>Time Series Analysis:</strong> Analyzing temporal data to identify trends and anomalies.
                 </div>
-<div class="skill-item">
-<i class="fas fa-users"></i>
-<strong>Human-Computer Interaction:</strong> Improving user experience through effective interface design.
+                <div class="skill-item">
+                  <i class="fas fa-users"></i>
+                  <strong>Human-Computer Interaction:</strong> Improving user experience through effective interface design.
                 </div>
-<div class="skill-item">
-<i class="fas fa-robot"></i>
-<strong>Large Language Models:</strong> Exploring applications of LLMs in text generation and summarization.
+                <div class="skill-item">
+                  <i class="fas fa-robot"></i>
+                  <strong>Large Language Models:</strong> Exploring applications of LLMs in text generation and summarization.
                 </div>
-</div>
-</div>
-</div>
-<!-- Latest Publication Container -->
-<div class="latest-publication">
-<div class="section-header">
-<h2>Latest Publication</h2>
-</div>
-<article class="publication">
-<h4>
-<a href="https://www.sciencedirect.com/science/article/pii/S2949719124000682" target="_blank">
-                  The performance of the LSTM-based code generated by Large
-                  Language Models (LLMs) in forecasting time series data
-                </a>
-</h4>
-<p class="authors">
-<strong>Saroj Gopali</strong> and Sima Siami-Namini and
-                Faranak Abri and Akbar Siami Namin
-              </p>
-<div class="paper-options">
-<a class="paper-option" href="https://www.sciencedirect.com/science/article/pii/S2949719124000682" target="_blank">
-<i class="fas fa-file-pdf"></i> View Paper
-                </a>
-</div>
-</article>
-</div>
-</div>
-</section>
-<section class="section" id="research">
-<div class="section-inner">
-<div class="section-header">
-<h2>Publications &amp; Contributions</h2>
-</div>
-<div class="scholar-profile">
-<a class="scholar-link" href="https://scholar.google.com/citations?user=Zt79RTIAAAAJ&amp;hl=en&amp;oi=ao" rel="noopener noreferrer" target="_blank">
-<i class="ai ai-google-scholar"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Latest Publication Container -->
+           <div class="latest-publication" id="latest-publication">
+            <div class="section-header">
+              <h2>Latest Publication</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="research">
+        <div class="section-inner">
+          <div class="section-header">
+            <h2>Publications &amp; Contributions</h2>
+          </div>
+          <div class="scholar-profile">
+            <a
+              class="scholar-link"
+              href="https://scholar.google.com/citations?user=Zt79RTIAAAAJ&amp;hl=en&amp;oi=ao"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <i class="ai ai-google-scholar"></i>
               View Google Scholar Profile
             </a>
-</div>
-<div class="scholar-metrics">
-<div class="metric-item">
-<span class="metric-label">Citations</span>
-<span class="metric-value">148</span>
-</div>
-<div class="metric-item">
-<span class="metric-label">h-index</span>
-<span class="metric-value">5</span>
-</div>
-<div class="metric-item">
-<span class="metric-label">i10-index</span>
-<span class="metric-value">4</span>
-</div>
-</div>
+          </div>
+
+          <div class="publications" id="publication-list"></div>
+
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="section-inner">
+          <div class="section-header">
+            <!-- <span class="section-label">Experience</span> -->
+            <h2>Professional Journey</h2>
+          </div>
+          <div class="timeline">
+            
+            <div class="timeline"></div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-inner">
+          <div class="section-header">
+            <!-- <span class="section-label">Projects</span> -->
+            <h2>Selected Works</h2>
+          </div>        
+          
+          <div class="projects-grid"></div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-social">
+          <div class="social-icons">
+            <a
+              href="https://www.linkedin.com/in/saroj-gopali"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn Profile"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/sarojgop"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub Profile"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://scholar.google.com/citations?user=Zt79RTIAAAAJ&hl=en&oi=ao"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Google Scholar Profile"
+            >
+              <i class="ai ai-google-scholar"></i>
+            </a>
+            
+            <a
+              href="https://www.researchgate.net/profile/Saroj-Gopali"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="ResearchGate Profile"
+            >
+              <i class="ai ai-researchgate"></i>
+            </a>
+          </div>
+          <p class="footer-text">© 2024 Saroj Gopali. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="css/myscripts.js"></script>
+    <script src="css/publications.js"></script>
+    <script src="css/experience.js"></script>
+    <script src="css/projects.js"></script>
 
 
-<div class="publications">
-<article class="publication">
-<h3>
-<a href="https://ieeexplore.ieee.org/abstract/document/9671488/" target="_blank">
-                            A comparison of TCN and LSTM models in detecting anomalies in time series data
-                        </a>
-</h3>
-<p class="authors">Saroj Gopali and Faranak Abri and Sima Siami-Namini and Akbar Siami Namin</p>
-<p class="venue"></p>
-<div class="pub-meta">
-<span class="year"></span>
-<span class="citations">Citations: 81</span>
-</div>
-</article>
 
-<article class="publication">
-<h3>
-<a href="https://www.mdpi.com/2079-9292/11/19/3205" target="_blank">
-                            Deep learning-based time-series analysis for detecting anomalies in internet of things
-                        </a>
-</h3>
-<p class="authors">Saroj Gopali and Akbar Siami Namin</p>
-<p class="venue"></p>
-<div class="pub-meta">
-<span class="year"></span>
-<span class="citations">Citations: 19</span>
-</div>
-</article>
-
-<article class="publication">
-<h3>
-<a href="https://ieeexplore.ieee.org/abstract/document/10196842/" target="_blank">
-                            A survey on blockchain-based federated learning and data privacy
-                        </a>
-</h3>
-<p class="authors">Bipin Chhetri and Saroj Gopali and Rukayat Olapojoye and Samin Dehbashi and Akbar Siami Namin</p>
-<p class="venue"></p>
-<div class="pub-meta">
-<span class="year"></span>
-<span class="citations">Citations: 17</span>
-</div>
-</article>
-
-<article class="publication">
-<h3>
-<a href="https://ieeexplore.ieee.org/abstract/document/9842527/" target="_blank">
-                            Vulnerability detection in smart contracts using deep learning
-                        </a>
-</h3>
-<p class="authors">Saroj Gopali and Zulfiqar Ali Khan and Bipin Chhetri and Bimal Karki and Akbar Siami Namin</p>
-<p class="venue"></p>
-<div class="pub-meta">
-<span class="year"></span>
-<span class="citations">Citations: 15</span>
-</div>
-</article>
-
-<article class="publication">
-<h3>
-<a href="https://dl.acm.org/doi/abs/10.1145/3605098.3636164" target="_blank">
-                            The performance of sequential deep learning models in detecting phishing websites using contextual features of URLs
-                        </a>
-</h3>
-<p class="authors">Saroj Gopali and Akbar S Namin and Faranak Abri and Keith S Jones</p>
-<p class="venue"></p>
-<div class="pub-meta">
-<span class="year"></span>
-<span class="citations">Citations: 7</span>
-</div>
-</article>
-
-<article class="publication">
-<h3>
-<a href="https://link.springer.com/chapter/10.1007/978-3-030-73100-7_47" target="_blank">
-                            HyPA: a hybrid password-based authentication mechanism
-                        </a>
-</h3>
-<p class="authors">Saroj Gopali and Pranaya Sharma and Praveen Kumar Khethavath and Doyel Pal</p>
-<p class="venue"></p>
-<div class="pub-meta">
-<span class="year"></span>
-<span class="citations">Citations: 4</span>
-</div>
-</article>
-
-<article class="publication">
-<h3>
-<a href="https://www.sciencedirect.com/science/article/pii/S2949719124000682" target="_blank">
-                            The performance of the LSTM-based code generated by Large Language Models (LLMs) in forecasting time series data
-                        </a>
-</h3>
-<p class="authors">Saroj Gopali and Sima Siami-Namini and Faranak Abri and Akbar Siami Namin</p>
-<p class="venue"></p>
-<div class="pub-meta">
-<span class="year"></span>
-<span class="citations">Citations: 2</span>
-</div>
-</article>
-
-<article class="publication">
-<h3>
-<a href="https://ieeexplore.ieee.org/abstract/document/10683735/" target="_blank">
-                            The Applicability of LLMs in Generating Textual Samples for Analysis of Imbalanced Datasets
-                        </a>
-</h3>
-<p class="authors">Saroj Gopali and Faranak Abri and Akbar Siami Namin and Keith S Jones</p>
-<p class="venue"></p>
-<div class="pub-meta">
-<span class="year"></span>
-<span class="citations">Citations: 2</span>
-</div>
-</article>
-
-<article class="publication">
-<h3>
-<a href="https://ieeexplore.ieee.org/abstract/document/10640372/" target="_blank">
-                            A Comparative Multivariate Analysis of VAR and Deep Learning-based Models for Forecasting Volatile Time Series Data
-                        </a>
-</h3>
-<p class="authors">Saroj Gopali and Sima Siami-Namini and Faranak Abri and Akbar Siami Namin</p>
-<p class="venue"></p>
-<div class="pub-meta">
-<span class="year"></span>
-<span class="citations">Citations: 1</span>
-</div>
-</article>
-
-<article class="publication">
-<h3>
-<a href="https://ttu-ir.tdl.org/items/5e43740f-d28f-4450-b438-f3507a4464de" target="_blank">
-                            Pattern Recognition and Analysis in Imbalanced Sequential Data
-                        </a>
-</h3>
-<p class="authors">Saroj Gopali</p>
-<p class="venue"></p>
-<div class="pub-meta">
-<span class="year"></span>
-<span class="citations">Citations: 0</span>
-</div>
-</article>
-</div>
-</div>
-</section>
-<section class="section" id="experience">
-<div class="section-inner">
-<div class="section-header">
-<!-- <span class="section-label">Experience</span> -->
-<h2>Professional Journey</h2>
-</div>
-<div class="timeline">
-<article class="timeline-entry">
-<div class="timeline-header">
-<h3>Post Doctoral Research Associate</h3>
-<div class="timeline-meta">
-<span class="organization">Texas Tech University</span>
-<span class="period">July 2024 - Present</span>
-</div>
-</div>
-<div class="timeline-content">
-<ul>
-<li>
-                    Developed an ETL pipeline that improved text extraction from
-                    unstructured data by 40% using deep learning techniques,
-                    enabling faster data processing for research project
-                  </li>
-<li>
-                    Created interactive antimicrobial resistance (AMR)
-                    dashboards that reduced data analysis time by 30% and
-                    provided real-time insights to stakeholders
-                  </li>
-<li>
-                    Implemented time-series prediction models that achieved 85%
-                    accuracy in forecasting resistance patterns, helping medical
-                    professionals make more informed decisions.Technologies
-                    used: React, Django, REST APIs, SQL, Time-series
-                    forecasting, Deep learning
-                  </li>
-</ul>
-</div>
-</article>
-<article class="timeline-entry">
-<div class="timeline-header">
-<h3>Research Assistant</h3>
-<div class="timeline-meta">
-<span class="organization">Texas Tech University</span>
-<span class="period">February 2022 - May 2024</span>
-</div>
-</div>
-<div class="timeline-content">
-<ul>
-<li>
-                    Conduct research on Human Factors in Cybersecurity and
-                    Social Engineering Attacks utilizing Natural Language
-                    Processing and Deep Learning techniques.
-                  </li>
-<li>
-                    Created a prototype leveraging cutting-edge technologies
-                    such as Large Language Model, Deep Learning.
-                  </li>
-<div class="tech-tags">
-<span>TensorFlow</span>
-<span>AWS</span>
-<span>Transformers</span>
-<span>PyTorch</span>
-</div>
-</ul>
-</div>
-</article>
-<article class="timeline-entry">
-<div class="timeline-header">
-<h3>Entrepreneur Lead</h3>
-<div class="timeline-meta">
-<span class="organization">National Science Foundation's Innovation Corps
-                    (I-Corps)</span>
-<span class="period">June 2022 - July 2022</span>
-</div>
-</div>
-<div class="timeline-content">
-<ul>
-<li>
-                    Conducted 100+ interviews with cybersecurity professionals,
-                    CEOs, CTOs, and insurance professionals.
-                  </li>
-<li>
-                    Evaluated 30+ hypotheses on services related to social
-                    engineering attack prevention.
-                  </li>
-<li>
-                    Led the seven-week intensive phase, coordinating team
-                    efforts and business model development.
-                  </li>
-</ul>
-</div>
-</article>
-<article class="timeline-entry">
-<div class="timeline-header">
-<h3>Software Intern</h3>
-<div class="timeline-meta">
-<span class="organization">Nemalife, Inc</span>
-<span class="period">June 2021 - August 2022</span>
-</div>
-</div>
-<div class="timeline-content">
-<ul>
-<li>
-                    Developed CI/CD pipeline using Microk8s Kubernetes in
-                    BareMetal Linux server.
-                  </li>
-<li>
-                    Implemented worm detection model using RetianNet50FPN with
-                    PyTorch Lightning (0.047% loss).
-                  </li>
-<li>
-                    Created multi-threaded digit detection interface using
-                    EasyOCR and FastAPI.
-                  </li>
-</ul>
-<div class="tech-tags">
-<span>Dropbox API</span>
-<span>AWS EC2</span>
-<span>Docker</span>
-<span>Kubernetes</span>
-<span>PyTorch</span>
-</div>
-</div>
-</article>
-</div>
-</div>
-</section>
-<section class="section" id="projects">
-<div class="section-inner">
-<div class="section-header">
-<!-- <span class="section-label">Projects</span> -->
-<h2>Selected Works</h2>
-</div>
-<div class="projects-grid">
-<article class="project-card">
-<div class="project-header">
-<h3>
-<a href="https://github.com/SarojGop/Stock-Prediction-Machine-Learning-Algorithm-" target="_blank">
-                    Stock Price Prediction ML Algorithm
-                  </a>
-<i class="fab fa-github"></i>
-</h3>
-</div>
-<p>
-                Implemented ARIMA and RNN with LSTM using Keras in R, achieving
-                10% error rate in stock price predictions.
-              </p>
-<div class="tech-tags">
-<span>R</span>
-<span>Shiny</span>
-<span>Keras</span>
-<span>TensorFlow</span>
-</div>
-</article>
-<article class="project-card">
-<div class="project-header">
-<h3>
-<a href="https://github.com/SarojGop/Hybrid-Password-Mechanism" target="_blank">
-                    HyPA: Hybrid Password Authentication
-                  </a>
-<i class="fab fa-github"></i>
-</h3>
-</div>
-<p>
-                Developed a novel authentication system combining image hash
-                values with text passwords, achieving 45% improved security.
-              </p>
-<div class="tech-tags">
-<span>Swift</span>
-<span>Firebase</span>
-<span>XCode</span>
-</div>
-<a class="paper-link" href="https://www.researchgate.net/profile/Saroj-Gopali/publication/350832061_HyPA_A_Hybrid_Password-Based_Authentication_Mechanism/links/6258ce2f709c5c2adb7c9643/HyPA-A-Hybrid-Password-Based-Authentication-Mechanism.pdf" target="_blank">
-                View Research Paper
-              </a>
-</article>
-<article class="project-card">
-<div class="project-header">
-<h3>Big Blue Button App</h3>
-</div>
-<p>
-                Created a portable alarm system using Raspberry Pi 4 with face
-                detection and recognition capabilities.
-              </p>
-<div class="tech-tags">
-<span>Python</span>
-<span>OpenCV</span>
-<span>AWS Rekognition</span>
-<span>Android</span>
-</div>
-</article>
-</div>
-</div>
-</section>
-</main>
-<footer class="footer">
-<div class="footer-content">
-<div class="footer-social">
-<div class="social-icons">
-<a aria-label="LinkedIn Profile" href="https://www.linkedin.com/in/saroj-gopali" rel="noopener noreferrer" target="_blank">
-<i class="fab fa-linkedin-in"></i>
-</a>
-<a aria-label="GitHub Profile" href="https://github.com/sarojgop" rel="noopener noreferrer" target="_blank">
-<i class="fab fa-github"></i>
-</a>
-<a aria-label="Google Scholar Profile" href="https://scholar.google.com/citations?user=Zt79RTIAAAAJ&amp;hl=en&amp;oi=ao" rel="noopener noreferrer" target="_blank">
-<i class="ai ai-google-scholar"></i>
-</a>
-<a aria-label="ResearchGate Profile" href="https://www.researchgate.net/profile/Saroj-Gopali" rel="noopener noreferrer" target="_blank">
-<i class="ai ai-researchgate"></i>
-</a>
-</div>
-<p class="footer-text">© 2024 Saroj Gopali. All rights reserved.</p>
-</div>
-</div>
-</footer>
-<script src="css/myscripts.js"></script>
-</body>
+    
+  </body>
 </html>
