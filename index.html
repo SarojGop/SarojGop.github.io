@@ -1,281 +1,107 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta
-      content="Saroj Gopali - PhD Candidate in Computer Science, Research in Social Engineering and Cybersecurity"
-      name="description"
-    />
-    <title>Saroj Gopali - Academic Portfolio</title>
-    <!-- Fonts and Icons -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
-      rel="stylesheet"
-    />
-    <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet"/>
-  </head>
-  <body>
-    <nav class="side-nav">
-      <div class="nav-content">
-        <div class="nav-header">
-          <h1>
-            <a onclick="showSection('about')"> Saroj Gopali </a>
-          </h1>
-          <button class="mobile-menu-button" aria-label="Toggle Navigation" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i> <!-- Font Awesome icon for the menu -->
-          </button>
-          <button class="close-menu-button" aria-label="Close Navigation" onclick="toggleMenu()" style="display: none;">
-            <i class="fas fa-times"></i> <!-- Font Awesome icon for close -->
-          </button>
-        </div>
-        <ul class="nav-links">
-          <li>
-            <button class="nav-link" onclick="showSection('about')">
-              About
-            </button>
-          </li>
-          <li>
-            <button class="nav-link" onclick="showSection('research')">
-              Research
-            </button>
-          </li>
-          <li>
-            <button class="nav-link" onclick="showSection('experience')">
-              Experience
-            </button>
-          </li>
-          <li>
-            <button class="nav-link" onclick="showSection('projects')">
-              Projects
-            </button>
-          </li>
-          
-        </ul>
-        
-      </div>
-    </nav>
-    <main class="main-content">
-      <section class="hero-section">
-        <div class="hero-image">
-          <img src="images/saroj_pic1.jpeg" alt="Saroj Gopali" />
-        </div>
-        <div class="hero-content">
-          <h1>Saroj Gopali, PhD</h1>
-          <p class="title">
-            Post Doctoral Research Associate<br />Texas Tech University
-          </p>
-        </div>
-          <div class="social-icons_top">
-            <a
-              href="https://www.linkedin.com/in/saroj-gopali"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn Profile"
-            >
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a
-              href="https://github.com/sarojgop"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub Profile"
-            >
-              <i class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://scholar.google.com/citations?user=Zt79RTIAAAAJ&hl=en&oi=ao"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Google Scholar Profile"
-            >
-              <i class="ai ai-google-scholar"></i>
-            </a>
-            
-            <a
-              href="https://www.researchgate.net/profile/Saroj-Gopali"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="ResearchGate Profile"
-            >
-              <i class="ai ai-researchgate"></i>
-            </a>
-          </div>
-      
-      </section>
-      <section class="section" id="about">
-        <div class="section-inner">
-          <div class="section-header">
-            <!-- <span class="section-label">About</span> -->
-            <h2>Background &amp; Research Focus</h2>
-          </div>
-          <div class="content-block">
-            <p class="lead">
-              I am a Postdoctoral Research Associate at Texas Tech University ,
-              passionate about advancing technology through data-driven research
-              and innovation. I am hold PhD in Computer Science from Texas Tech
-              University where my research integrates deep learning, natural
-              language processing, Large Language Models, Time Series Analysis,
-              and human-computer interaction to enhance cybersecurity measures.
-            </p>
-            <p>
-              With a Master of Science in Software Engineering from Texas Tech
-              University, I have extensive experience in detecting anomalies in
-              time series data using deep learning algorithms. My current
-              research interests include multidisciplinary research on social
-              engineering attacks involving human factors, utilizing
-              cutting-edge tools such as Large Language Models and Natural
-              Language Processing (NLP).
-            </p>
-          </div>
-          <div class="section-header">
-            <h2>Research Interests</h2>
-          </div>
-          <div class="skills-container">
-            <div class="skill-group">
-              
-              <div class="skill-items">
-                <div class="skill-item">
-                  <i class="fas fa-lightbulb"></i>
-                  <strong>Cybersecurity:</strong> Developing solutions to safeguard systems against cyber threats and vulnerabilities.
-                </div>
-                <div class="skill-item">
-                  <i class="fas fa-brain"></i>
-                  <strong>Deep Learning:</strong> Enhancing predictive accuracy through advanced neural network architectures.
-                </div>
-                <div class="skill-item">
-                  <i class="fas fa-comments"></i>
-                  <strong>Natural Language Processing:</strong> Utilizing NLP techniques for language analysis and generation.
-                </div>
-                <div class="skill-item">
-                  <i class="fas fa-chart-line"></i>
-                  <strong>Time Series Analysis:</strong> Analyzing temporal data to identify trends and anomalies.
-                </div>
-                <div class="skill-item">
-                  <i class="fas fa-users"></i>
-                  <strong>Human-Computer Interaction:</strong> Improving user experience through effective interface design.
-                </div>
-                <div class="skill-item">
-                  <i class="fas fa-robot"></i>
-                  <strong>Large Language Models:</strong> Exploring applications of LLMs in text generation and summarization.
-                </div>
-              </div>
-            </div>
-          </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Saroj Gopali, PhD — Postdoctoral Researcher at Texas Tech University. Deep Learning, NLP, Cybersecurity." />
+  <title>Saroj Gopali, PhD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
 
-          <!-- Latest Publication Container -->
-           <div class="latest-publication" id="latest-publication">
-            <div class="section-header">
-              <h2>Latest Publication</h2>
+  <!-- Nav -->
+  <nav class="topnav">
+    <div class="nav-inner">
+      <a href="#" class="nav-name">Saroj Gopali</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section id="about" class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-photo">
+            <img src="images/saroj_pic1.jpeg" alt="Saroj Gopali" />
+          </div>
+          <div class="hero-text">
+            <h1>Saroj Gopali, PhD</h1>
+            <p class="subtitle">Postdoctoral Research Associate</p>
+            <p class="affiliation">Department of Computer Science, Texas Tech University</p>
+            <p class="bio">My research integrates deep learning, NLP, and time series analysis to address challenges in cybersecurity and IoT systems. I focus on anomaly detection in critical infrastructure, privacy-preserving federated learning, and LLM-driven data augmentation.</p>
+            <div class="hero-links">
+              <a href="mailto:saroj.gopali@ttu.edu"><i class="fas fa-envelope"></i> Email</a>
+              <a href="https://scholar.google.com/citations?user=Zt79RTIAAAAJ" target="_blank"><i class="ai ai-google-scholar"></i> Scholar</a>
+              <a href="https://github.com/sarojgop" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+              <a href="https://www.linkedin.com/in/saroj-gopali" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+              <a href="https://www.researchgate.net/profile/Saroj-Gopali" target="_blank"><i class="ai ai-researchgate"></i> ResearchGate</a>
             </div>
           </div>
         </div>
-      </section>
-      <section class="section" id="research">
-        <div class="section-inner">
-          <div class="section-header">
-            <h2>Publications &amp; Contributions</h2>
-          </div>
-          <div class="scholar-profile">
-            <a
-              class="scholar-link"
-              href="https://scholar.google.com/citations?user=Zt79RTIAAAAJ&amp;hl=en&amp;oi=ao"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <i class="ai ai-google-scholar"></i>
-              View Google Scholar Profile
-            </a>
-          </div>
 
-          <div class="publications" id="publication-list"></div>
-
-        </div>
-      </section>
-
-      <section class="section" id="experience">
-        <div class="section-inner">
-          <div class="section-header">
-            <!-- <span class="section-label">Experience</span> -->
-            <h2>Professional Journey</h2>
-          </div>
-          <div class="timeline">
-            
-            <div class="timeline"></div>
-
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="projects">
-        <div class="section-inner">
-          <div class="section-header">
-            <!-- <span class="section-label">Projects</span> -->
-            <h2>Selected Works</h2>
-          </div>        
-          
-          <div class="projects-grid"></div>
-
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-social">
-          <div class="social-icons">
-            <a
-              href="https://www.linkedin.com/in/saroj-gopali"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn Profile"
-            >
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a
-              href="https://github.com/sarojgop"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub Profile"
-            >
-              <i class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://scholar.google.com/citations?user=Zt79RTIAAAAJ&hl=en&oi=ao"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Google Scholar Profile"
-            >
-              <i class="ai ai-google-scholar"></i>
-            </a>
-            
-            <a
-              href="https://www.researchgate.net/profile/Saroj-Gopali"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="ResearchGate Profile"
-            >
-              <i class="ai ai-researchgate"></i>
-            </a>
-          </div>
-          <p class="footer-text">© 2024 Saroj Gopali. All rights reserved.</p>
+        <div class="tags-row">
+          <span>Deep Learning</span>
+          <span>Time Series</span>
+          <span>NLP / LLMs</span>
+          <span>Cybersecurity</span>
+          <span>IoT</span>
+          <span>Federated Learning</span>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script src="css/myscripts.js"></script>
-    <script src="css/publications.js"></script>
-    <script src="css/experience.js"></script>
-    <script src="css/projects.js"></script>
+    <!-- Education (compact) -->
+    <section class="container edu-row">
+      <div class="edu-item"><i class="fas fa-graduation-cap"></i> <strong>PhD, Computer Science</strong> — Texas Tech University, 2024</div>
+      <div class="edu-item"><i class="fas fa-graduation-cap"></i> <strong>MS, Software Engineering</strong> — Texas Tech University, 2021</div>
+    </section>
 
+    <!-- Publications -->
+    <section id="publications" class="section">
+      <div class="container">
+        <h2>Publications</h2>
+        <div id="publications-auto"></div>
+      </div>
+    </section>
 
+    <!-- Experience -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <h2>Experience</h2>
+        <div id="experience-timeline"></div>
+      </div>
+    </section>
 
-    
-  </body>
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Selected Projects</h2>
+        <div id="projects-grid"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Saroj Gopali &middot; Texas Tech University</p>
+    </div>
+  </footer>
+
+  <script src="css/myscripts.js"></script>
+  <script src="css/publications.js"></script>
+  <script src="css/experience.js"></script>
+  <script src="css/projects.js"></script>
+</body>
 </html>

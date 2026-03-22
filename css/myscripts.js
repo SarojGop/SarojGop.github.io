@@ -1,75 +1,35 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Show the about section by default
-    showSection('about');
+document.addEventListener('DOMContentLoaded', function () {
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      var href = this.getAttribute('href');
+      if (href.length > 1) {
+        e.preventDefault();
+        var target = document.getElementById(href.substring(1));
+        if (target) window.scrollTo({ top: target.offsetTop - 60, behavior: 'smooth' });
+        // Close mobile menu
+        document.querySelector('.nav-links').classList.remove('open');
+      }
+    });
+  });
 
-    // Add active class to the current navigation item
-    const navLinks = document.querySelectorAll('.nav-link');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            navLinks.forEach(l => l.classList.remove('active'));
-            this.classList.add('active');
+  // Mobile menu
+  var toggle = document.getElementById('nav-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', function () {
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+  }
+
+  // Scroll spy
+  window.addEventListener('scroll', function () {
+    var pos = window.scrollY + 100;
+    document.querySelectorAll('section[id]').forEach(function (sec) {
+      if (pos >= sec.offsetTop && pos < sec.offsetTop + sec.offsetHeight) {
+        document.querySelectorAll('.nav-links a').forEach(function (a) {
+          a.classList.toggle('active', a.getAttribute('href') === '#' + sec.id);
         });
+      }
     });
+  });
 });
-
-function showSection(sectionId) {
-    // Hide all sections
-    const sections = document.querySelectorAll('.section');
-    sections.forEach(section => {
-        section.classList.remove('active');
-    });
-
-    // Show the selected section
-    const selectedSection = document.getElementById(sectionId);
-    if (selectedSection) {
-        setTimeout(() => {
-            selectedSection.classList.add('active');
-        }, 50);
-    }
-
-    // Update URL hash without scrolling
-    history.pushState(null, null, `#${sectionId}`);
-}
-
-function refreshPage() {
-    window.location.href = window.location.pathname;
-}
-
-function generateEmail() {
-    const username = 'saroj.gopali';
-    const domain = 'ttu.edu';
-    const email = `${username}@${domain}`;
-    
-    // Create a temporary input element
-    const tempInput = document.createElement('input');
-    tempInput.value = email;
-    document.body.appendChild(tempInput);
-    
-    // Select and copy the email
-    tempInput.select();
-    document.execCommand('copy');
-    document.body.removeChild(tempInput);
-    
-    // Show a tooltip or notification
-    alert('Email address copied to clipboard!');
-}
-
-
-function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    const closeButton = document.querySelector('.close-menu-button');
-    
-    navLinks.classList.toggle('active');
-    
-    // Toggle the display of the close button
-    if (navLinks.classList.contains('active')) {
-        closeButton.style.display = 'block'; // Show close button
-    } else {
-        closeButton.style.display = 'none'; // Hide close button
-    }
-}
-
-// function showSection(section) {
-//     alert(`Showing ${section} section!`); // Placeholder for section navigation
-// }
-
