@@ -1,0 +1,151 @@
+name: Update Publications
+
+on:
+  schedule:
+    - cron: '0 8 * * 1'  # Every Monday 8am UTC
+  workflow_dispatch:
+
+jobs:
+  update-pubs:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install requests scholarly
+
+      - name: Fetch publications (Semantic Scholar + Google Scholar fallback)
+        run: |
+          python3 << 'PYEOF'
+          import requests, json, re, sys
+
+          # === Source 1: Semantic Scholar ===
+          def fetch_semantic_scholar():
+              url = "https://api.semanticscholar.org/graph/v1/author/2101065912/papers?fields=title,year,authors,url,citationCount,venue,externalIds&limit=50"
+              resp = requests.get(url, timeout=30)
+              resp.raise_for_status()
+              papers = resp.json().get("data", [])
+              if not papers:
+                  raise Exception("No papers from Semantic Scholar")
+
+              grouped = {}
+              for p in papers:
+                  year = str(p.get("year", "Unknown"))
+                  authors = [a.get("name", "") for a in p.get("authors", [])]
+                  ext = p.get("externalIds") or {}
+                  doi = ext.get("DOI", "")
+                  arxiv = ext.get("ArXiv", "")
+                  link = p.get("url", "")
+                  if arxiv: link = f"https://arxiv.org/abs/{arxiv}"
+                  elif doi: link = f"https://doi.org/{doi}"
+
+                  grouped.setdefault(year, []).append({
+                      "title": p.get("title", "Untitled"),
+                      "authors": authors,
+                      "venue": p.get("venue", ""),
+                      "link": link,
+                      "doi": doi,
+                      "citationCount": p.get("citationCount", 0)
+                  })
+              return grouped, len(papers)
+
+          # === Source 2: Google Scholar via scholarly ===
+          def fetch_google_scholar():
+              from scholarly import scholarly
+              author = scholarly.search_author_id("Zt79RTIAAAAJ")
+              author = scholarly.fill(author, sections=["publications"])
+
+              grouped = {}
+              for pub in author.get("publications", []):
+                  pub = scholarly.fill(pub)
+                  bib = pub.get("bib", {})
+                  title = bib.get("title", "Untitled")
+                  authors = bib.get("author", "").split(" and ")
+                  year = str(bib.get("pub_year", "Unknown"))
+                  venue = bib.get("venue", bib.get("journal", bib.get("booktitle", "")))
+                  link = pub.get("pub_url", "")
+                  citations = pub.get("num_citations", 0)
+
+                  grouped.setdefault(year, []).append({
+                      "title": title,
+                      "authors": [a.strip() for a in authors],
+                      "venue": venue,
+                      "link": link,
+                      "doi": None,
+                      "citationCount": citations
+                  })
+              if not grouped:
+                  raise Exception("No papers from Google Scholar")
+              return grouped, sum(len(v) for v in grouped.values())
+
+          # === Try both sources ===
+          grouped = None
+          source = None
+
+          try:
+              print("Trying Semantic Scholar...")
+              grouped, count = fetch_semantic_scholar()
+              source = "Semantic Scholar"
+              print(f"  Got {count} papers")
+          except Exception as e:
+              print(f"  Failed: {e}")
+
+          if not grouped:
+              try:
+                  print("Trying Google Scholar...")
+                  grouped, count = fetch_google_scholar()
+                  source = "Google Scholar"
+                  print(f"  Got {count} papers")
+              except Exception as e:
+                  print(f"  Failed: {e}")
+
+          if not grouped:
+              print("Both sources failed. No update.")
+              sys.exit(0)
+
+          # Sort
+          for year in grouped:
+              grouped[year].sort(key=lambda p: p.get("citationCount", 0), reverse=True)
+
+          # Update publications.js
+          js_data = json.dumps(grouped, indent=2, ensure_ascii=False)
+          with open("css/publications.js", "r") as f:
+              content = f.read()
+
+          new_content = re.sub(
+              r'var publicationsData = \{.*?\};',
+              f'var publicationsData = {js_data};',
+              content, flags=re.DOTALL
+          )
+
+          with open("css/publications.js", "w") as f:
+              f.write(new_content)
+
+          print(f"\nUpdated from {source}: {sum(len(v) for v in grouped.values())} papers")
+          for y in sorted(grouped.keys(), reverse=True):
+              print(f"  {y}: {len(grouped[y])} papers")
+          PYEOF
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet css/publications.js; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add css/publications.js
+          git commit -m "Auto-update publications [$(date +%Y-%m-%d)]"
+          git push

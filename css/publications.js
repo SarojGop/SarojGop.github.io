@@ -286,13 +286,96 @@ function renderPublications(data, source) {
   }, 200);
 }
 
-// Initialize publications
+// Google Scholar fetch via SerpAPI proxy (free tier: 100 searches/month)
+// Alternative: use scholarly-api or google-scholar-scraper proxy
+var GOOGLE_SCHOLAR_PROXY = 'https://serpapi.com/search.json?engine=google_scholar_author&author_id=Zt79RTIAAAAJ&num=40';
+
+function fetchFromGoogleScholar() {
+  // Use a CORS proxy to access Google Scholar data
+  // Option 1: SerpAPI (if API key is set)
+  // Option 2: scholar.google.com via allorigins proxy
+  var proxyUrl = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(
+    'https://scholar.google.com/citations?user=Zt79RTIAAAAJ&hl=en&cstart=0&pagesize=40&sortby=pubdate&view_op=list_works'
+  );
+
+  return fetch(proxyUrl)
+    .then(function (response) {
+      if (!response.ok) throw new Error('Google Scholar proxy failed');
+      return response.text();
+    })
+    .then(function (html) {
+      return parseGoogleScholarHTML(html);
+    });
+}
+
+function parseGoogleScholarHTML(html) {
+  var grouped = {};
+  var parser = new DOMParser();
+  var doc = parser.parseFromString(html, 'text/html');
+  var rows = doc.querySelectorAll('.gsc_a_tr');
+
+  rows.forEach(function (row) {
+    var titleEl = row.querySelector('.gsc_a_at');
+    var authorsEl = row.querySelector('.gs_gray');
+    var yearEl = row.querySelector('.gsc_a_y span');
+
+    if (!titleEl) return;
+
+    var title = titleEl.textContent.trim();
+    var link = titleEl.getAttribute('href') || '';
+    if (link && !link.startsWith('http')) {
+      link = 'https://scholar.google.com' + link;
+    }
+
+    var authorsText = authorsEl ? authorsEl.textContent.trim() : '';
+    var authors = authorsText.split(',').map(function (a) { return a.trim(); });
+
+    // Get venue (second .gs_gray element)
+    var grays = row.querySelectorAll('.gs_gray');
+    var venue = grays.length > 1 ? grays[1].textContent.trim() : '';
+
+    var year = yearEl ? yearEl.textContent.trim() : 'Unknown';
+    if (!year || year === '') year = 'Unknown';
+
+    if (!grouped[year]) grouped[year] = [];
+    grouped[year].push({
+      title: title,
+      authors: authors,
+      venue: venue,
+      link: link,
+      doi: null,
+      citationCount: 0
+    });
+  });
+
+  if (Object.keys(grouped).length === 0) {
+    throw new Error('No papers parsed from Google Scholar');
+  }
+
+  return grouped;
+}
+
+// Initialize publications with fallback chain:
+// 1. Semantic Scholar API (best structured data)
+// 2. Google Scholar via proxy (backup)
+// 3. Manual fallback data (always works)
 (function () {
+  console.log('[Pubs] Trying Semantic Scholar...');
   fetchFromSemanticScholar()
     .then(function (apiData) {
+      console.log('[Pubs] Semantic Scholar succeeded');
       renderPublications(apiData, 'api');
     })
-    .catch(function () {
-      renderPublications(publicationsData, 'fallback');
+    .catch(function (err) {
+      console.log('[Pubs] Semantic Scholar failed:', err.message, '— trying Google Scholar...');
+      fetchFromGoogleScholar()
+        .then(function (gsData) {
+          console.log('[Pubs] Google Scholar succeeded');
+          renderPublications(gsData, 'google-scholar');
+        })
+        .catch(function (err2) {
+          console.log('[Pubs] Google Scholar failed:', err2.message, '— using fallback');
+          renderPublications(publicationsData, 'fallback');
+        });
     });
 })();
