@@ -114,7 +114,7 @@ var publicationsData = {
       "venue": "Annual International Computer Software and Applications Conference",
       "link": "https://arxiv.org/abs/2306.17338",
       "doi": "10.1109/COMPSAC57700.2023.00199",
-      "citationCount": 23
+      "citationCount": 24
     }
   ],
   "2022": [
@@ -156,7 +156,7 @@ var publicationsData = {
       "venue": "2021 IEEE International Conference on Big Data (Big Data)",
       "link": "https://doi.org/10.1109/BigData52589.2021.9671488",
       "doi": "10.1109/BigData52589.2021.9671488",
-      "citationCount": 68
+      "citationCount": 71
     },
     {
       "title": "A Comparative Study of Detecting Anomalies in Time Series Data Using LSTM and TCN Models",
@@ -169,7 +169,7 @@ var publicationsData = {
       "venue": "arXiv.org",
       "link": "https://arxiv.org/abs/2112.09293",
       "doi": "",
-      "citationCount": 15
+      "citationCount": 16
     },
     {
       "title": "HyPA: A Hybrid Password-Based Authentication Mechanism",
