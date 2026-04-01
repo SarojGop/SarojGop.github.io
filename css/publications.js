@@ -53,7 +53,7 @@ var publicationsData = {
       "authors": [
         "Saroj Gopali",
         "Sima Siami‐Namini",
-        "Faranak Abri",
+        "F. Abri",
         "A. Namin"
       ],
       "venue": "Natural Language Processing Journal",
@@ -66,7 +66,7 @@ var publicationsData = {
       "authors": [
         "Saroj Gopali",
         "Sima Siami‐Namini",
-        "Faranak Abri",
+        "F. Abri",
         "Akbar Siami Namin"
       ],
       "venue": "IEEE Access",
@@ -79,7 +79,7 @@ var publicationsData = {
       "authors": [
         "Saroj Gopali",
         "A. Namin",
-        "Faranak Abri",
+        "F. Abri",
         "Keith S. Jones"
       ],
       "venue": "ACM Symposium on Applied Computing",
@@ -91,7 +91,7 @@ var publicationsData = {
       "title": "The Applicability of LLMs in Generating Textual Samples for Analysis of Imbalanced Datasets",
       "authors": [
         "Saroj Gopali",
-        "Faranak Abri",
+        "F. Abri",
         "Akbar Siami Namin",
         "Keith S. Jones"
       ],
@@ -149,7 +149,7 @@ var publicationsData = {
       "title": "A Comparison of TCN and LSTM Models in Detecting Anomalies in Time Series Data",
       "authors": [
         "Saroj Gopali",
-        "Faranak Abri",
+        "F. Abri",
         "Sima Siami‐Namini",
         "A. Namin"
       ],
@@ -162,7 +162,7 @@ var publicationsData = {
       "title": "A Comparative Study of Detecting Anomalies in Time Series Data Using LSTM and TCN Models",
       "authors": [
         "Saroj Gopali",
-        "Faranak Abri",
+        "F. Abri",
         "Sima Siami‐Namini",
         "A. Namin"
       ],
