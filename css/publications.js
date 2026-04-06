@@ -59,7 +59,7 @@ var publicationsData = {
       "venue": "Natural Language Processing Journal",
       "link": "https://arxiv.org/abs/2411.18731",
       "doi": "10.1016/j.nlp.2024.100120",
-      "citationCount": 9
+      "citationCount": 10
     },
     {
       "title": "A Comparative Multivariate Analysis of VAR and Deep Learning-Based Models for Forecasting Volatile Time Series Data",
