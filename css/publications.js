@@ -114,7 +114,7 @@ var publicationsData = {
       "venue": "Annual International Computer Software and Applications Conference",
       "link": "https://arxiv.org/abs/2306.17338",
       "doi": "10.1109/COMPSAC57700.2023.00199",
-      "citationCount": 25
+      "citationCount": 26
     }
   ],
   "2022": [
