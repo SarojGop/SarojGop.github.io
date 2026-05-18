@@ -62,19 +62,6 @@ var publicationsData = {
       "citationCount": 10
     },
     {
-      "title": "A Comparative Multivariate Analysis of VAR and Deep Learning-Based Models for Forecasting Volatile Time Series Data",
-      "authors": [
-        "Saroj Gopali",
-        "Sima Siami‐Namini",
-        "F. Abri",
-        "Akbar Siami Namin"
-      ],
-      "venue": "IEEE Access",
-      "link": "https://doi.org/10.1109/ACCESS.2024.3447354",
-      "doi": "10.1109/ACCESS.2024.3447354",
-      "citationCount": 9
-    },
-    {
       "title": "The Performance of Sequential Deep Learning Models in Detecting Phishing Websites Using Contextual Features of URLs",
       "authors": [
         "Saroj Gopali",
@@ -85,6 +72,19 @@ var publicationsData = {
       "venue": "ACM Symposium on Applied Computing",
       "link": "https://arxiv.org/abs/2404.09802",
       "doi": "10.1145/3605098.3636164",
+      "citationCount": 10
+    },
+    {
+      "title": "A Comparative Multivariate Analysis of VAR and Deep Learning-Based Models for Forecasting Volatile Time Series Data",
+      "authors": [
+        "Saroj Gopali",
+        "Sima Siami‐Namini",
+        "F. Abri",
+        "Akbar Siami Namin"
+      ],
+      "venue": "IEEE Access",
+      "link": "https://doi.org/10.1109/ACCESS.2024.3447354",
+      "doi": "10.1109/ACCESS.2024.3447354",
       "citationCount": 9
     },
     {
