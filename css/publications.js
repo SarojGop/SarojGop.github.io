@@ -4,21 +4,25 @@
 
 // Manual fallback data (all 11 papers)
 var publicationsData = {
-  "2025": [
+  "2026": [
     {
-      "title": "In-Context and Few-Shots Learning for Forecasting Time Series Data Based on Large Language Models",
+      "title": "ACT: A Conceptual Framework for Understanding and Controlling Trustworthiness in Controllable AI",
       "authors": [
+        "Venkata Sai Prathyush Turaga",
         "Saroj Gopali",
-        "Bipin Chhetri",
-        "Deepika Giri",
-        "Sima Siami‐Namini",
+        "Peter Kieseberg",
+        "Timea Pahi",
+        "S. Tjoa",
+        "Keith S. Jones",
         "A. Namin"
       ],
-      "venue": "BigData Congress [Services Society]",
-      "link": "https://arxiv.org/abs/2512.07705",
-      "doi": "10.1109/BigData66926.2025.11401073",
-      "citationCount": 1
-    },
+      "venue": "IEEE Access",
+      "link": "https://doi.org/10.1109/access.2026.3694817",
+      "doi": "10.1109/access.2026.3694817",
+      "citationCount": 0
+    }
+  ],
+  "2025": [
     {
       "title": "IoT Malware Network Traffic Detection using Deep Learning and GraphSAGE Models",
       "authors": [
@@ -30,7 +34,21 @@ var publicationsData = {
       "venue": "Annual International Computer Software and Applications Conference",
       "link": "https://arxiv.org/abs/2507.10758",
       "doi": "10.1109/COMPSAC65507.2025.00252",
-      "citationCount": 0
+      "citationCount": 1
+    },
+    {
+      "title": "In-Context and Few-Shots Learning for Forecasting Time Series Data Based on Large Language Models",
+      "authors": [
+        "Saroj Gopali",
+        "Bipin Chhetri",
+        "D. Giri",
+        "Sima Siami‐Namini",
+        "A. Namin"
+      ],
+      "venue": "BigData Congress [Services Society]",
+      "link": "https://arxiv.org/abs/2512.07705",
+      "doi": "10.1109/BigData66926.2025.11401073",
+      "citationCount": 1
     },
     {
       "title": "A data privacy and deep learning based AMR dashboard for rural and regional veterinary practices in Texas",
@@ -98,7 +116,7 @@ var publicationsData = {
       "venue": "IEEE Access",
       "link": "https://doi.org/10.1109/ACCESS.2024.3463400",
       "doi": "10.1109/ACCESS.2024.3463400",
-      "citationCount": 6
+      "citationCount": 7
     }
   ],
   "2023": [
