@@ -14,7 +14,7 @@ var publicationsData = {
         "Timea Pahi",
         "S. Tjoa",
         "Keith S. Jones",
-        "A. Namin"
+        "Akbar Siami Namin"
       ],
       "venue": "IEEE Access",
       "link": "https://doi.org/10.1109/access.2026.3694817",
@@ -34,7 +34,7 @@ var publicationsData = {
       "venue": "Annual International Computer Software and Applications Conference",
       "link": "https://arxiv.org/abs/2507.10758",
       "doi": "10.1109/COMPSAC65507.2025.00252",
-      "citationCount": 1
+      "citationCount": 2
     },
     {
       "title": "In-Context and Few-Shots Learning for Forecasting Time Series Data Based on Large Language Models",
@@ -77,7 +77,7 @@ var publicationsData = {
       "venue": "Natural Language Processing Journal",
       "link": "https://arxiv.org/abs/2411.18731",
       "doi": "10.1016/j.nlp.2024.100120",
-      "citationCount": 10
+      "citationCount": 11
     },
     {
       "title": "The Performance of Sequential Deep Learning Models in Detecting Phishing Websites Using Contextual Features of URLs",
@@ -145,7 +145,7 @@ var publicationsData = {
       "venue": "Electronics",
       "link": "https://doi.org/10.3390/electronics11193205",
       "doi": "10.3390/electronics11193205",
-      "citationCount": 20
+      "citationCount": 21
     },
     {
       "title": "Vulnerability Detection in Smart Contracts Using Deep Learning",
