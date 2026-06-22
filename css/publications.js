@@ -77,7 +77,7 @@ var publicationsData = {
       "venue": "Natural Language Processing Journal",
       "link": "https://arxiv.org/abs/2411.18731",
       "doi": "10.1016/j.nlp.2024.100120",
-      "citationCount": 11
+      "citationCount": 12
     },
     {
       "title": "The Performance of Sequential Deep Learning Models in Detecting Phishing Websites Using Contextual Features of URLs",
@@ -145,7 +145,7 @@ var publicationsData = {
       "venue": "Electronics",
       "link": "https://doi.org/10.3390/electronics11193205",
       "doi": "10.3390/electronics11193205",
-      "citationCount": 21
+      "citationCount": 22
     },
     {
       "title": "Vulnerability Detection in Smart Contracts Using Deep Learning",
@@ -174,7 +174,7 @@ var publicationsData = {
       "venue": "2021 IEEE International Conference on Big Data (Big Data)",
       "link": "https://doi.org/10.1109/BigData52589.2021.9671488",
       "doi": "10.1109/BigData52589.2021.9671488",
-      "citationCount": 73
+      "citationCount": 74
     },
     {
       "title": "A Comparative Study of Detecting Anomalies in Time Series Data Using LSTM and TCN Models",
