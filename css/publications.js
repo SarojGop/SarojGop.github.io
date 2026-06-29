@@ -90,7 +90,7 @@ var publicationsData = {
       "venue": "ACM Symposium on Applied Computing",
       "link": "https://arxiv.org/abs/2404.09802",
       "doi": "10.1145/3605098.3636164",
-      "citationCount": 10
+      "citationCount": 11
     },
     {
       "title": "A Comparative Multivariate Analysis of VAR and Deep Learning-Based Models for Forecasting Volatile Time Series Data",
@@ -116,7 +116,7 @@ var publicationsData = {
       "venue": "IEEE Access",
       "link": "https://doi.org/10.1109/ACCESS.2024.3463400",
       "doi": "10.1109/ACCESS.2024.3463400",
-      "citationCount": 7
+      "citationCount": 8
     }
   ],
   "2023": [
@@ -145,7 +145,7 @@ var publicationsData = {
       "venue": "Electronics",
       "link": "https://doi.org/10.3390/electronics11193205",
       "doi": "10.3390/electronics11193205",
-      "citationCount": 22
+      "citationCount": 23
     },
     {
       "title": "Vulnerability Detection in Smart Contracts Using Deep Learning",
