@@ -17,8 +17,8 @@ var publicationsData = {
         "Akbar Siami Namin"
       ],
       "venue": "IEEE Access",
-      "link": "https://doi.org/10.1109/access.2026.3694817",
-      "doi": "10.1109/access.2026.3694817",
+      "link": "https://doi.org/10.1109/ACCESS.2026.3694817",
+      "doi": "10.1109/ACCESS.2026.3694817",
       "citationCount": 0
     }
   ],
@@ -174,7 +174,7 @@ var publicationsData = {
       "venue": "2021 IEEE International Conference on Big Data (Big Data)",
       "link": "https://doi.org/10.1109/BigData52589.2021.9671488",
       "doi": "10.1109/BigData52589.2021.9671488",
-      "citationCount": 74
+      "citationCount": 75
     },
     {
       "title": "A Comparative Study of Detecting Anomalies in Time Series Data Using LSTM and TCN Models",
