@@ -22,7 +22,7 @@ var publicationsData = {
       "citationCount": 0
     },
     {
-      "title": "Neuro-Agentic Control: A Deep Learning-based LLM-Powered Agentic AI Framework for Controlling Security Controls",
+      "title": "Neuro-Agentic Control: A Deep Learning-Based LLM-Powered Agentic AI Framework for Controlling Security Controls",
       "authors": [
         "S. Gopali",
         "Bipin Chhetri",
@@ -30,9 +30,9 @@ var publicationsData = {
         "Sima Siami‐Namini",
         "A. Namin"
       ],
-      "venue": "",
+      "venue": "Annual International Computer Software and Applications Conference",
       "link": "https://arxiv.org/abs/2607.09076",
-      "doi": "",
+      "doi": "10.1109/COMPSAC69091.2026.00376",
       "citationCount": 0
     }
   ],
@@ -130,7 +130,7 @@ var publicationsData = {
       "venue": "IEEE Access",
       "link": "https://doi.org/10.1109/ACCESS.2024.3463400",
       "doi": "10.1109/ACCESS.2024.3463400",
-      "citationCount": 8
+      "citationCount": 9
     }
   ],
   "2023": [
@@ -159,7 +159,7 @@ var publicationsData = {
       "venue": "Electronics",
       "link": "https://doi.org/10.3390/electronics11193205",
       "doi": "10.3390/electronics11193205",
-      "citationCount": 23
+      "citationCount": 25
     },
     {
       "title": "Vulnerability Detection in Smart Contracts Using Deep Learning",
@@ -188,7 +188,7 @@ var publicationsData = {
       "venue": "2021 IEEE International Conference on Big Data (Big Data)",
       "link": "https://doi.org/10.1109/BigData52589.2021.9671488",
       "doi": "10.1109/BigData52589.2021.9671488",
-      "citationCount": 81
+      "citationCount": 82
     },
     {
       "title": "A Comparative Study of Detecting Anomalies in Time Series Data Using LSTM and TCN Models",
@@ -201,7 +201,7 @@ var publicationsData = {
       "venue": "arXiv.org",
       "link": "https://arxiv.org/abs/2112.09293",
       "doi": "",
-      "citationCount": 18
+      "citationCount": 19
     },
     {
       "title": "HyPA: A Hybrid Password-Based Authentication Mechanism",
