@@ -38,6 +38,19 @@ var publicationsData = {
   ],
   "2025": [
     {
+      "title": "IoT Malware Network Traffic Detection using Deep Learning and GraphSAGE Models",
+      "authors": [
+        "Nikesh Prajapati",
+        "B. Karki",
+        "S. Gopali",
+        "A. Namin"
+      ],
+      "venue": "Annual International Computer Software and Applications Conference",
+      "link": "https://arxiv.org/abs/2507.10758",
+      "doi": "10.1109/COMPSAC65507.2025.00252",
+      "citationCount": 3
+    },
+    {
       "title": "In-Context and Few-Shots Learning for Forecasting Time Series Data Based on Large Language Models",
       "authors": [
         "S. Gopali",
@@ -50,19 +63,6 @@ var publicationsData = {
       "link": "https://arxiv.org/abs/2512.07705",
       "doi": "10.1109/BigData66926.2025.11401073",
       "citationCount": 3
-    },
-    {
-      "title": "IoT Malware Network Traffic Detection using Deep Learning and GraphSAGE Models",
-      "authors": [
-        "Nikesh Prajapati",
-        "B. Karki",
-        "S. Gopali",
-        "A. Namin"
-      ],
-      "venue": "Annual International Computer Software and Applications Conference",
-      "link": "https://arxiv.org/abs/2507.10758",
-      "doi": "10.1109/COMPSAC65507.2025.00252",
-      "citationCount": 2
     },
     {
       "title": "A data privacy and deep learning based AMR dashboard for rural and regional veterinary practices in Texas",
@@ -226,7 +226,7 @@ var publicationsData = {
         "L. Reddy",
         "S. Gopali",
         "V. B",
-        "'. Raman",
+        "Raman",
         "T. Ramana",
         "D. Biiaskar",
         "Rao"
