@@ -14,7 +14,7 @@ var publicationsData = {
         "Timea Pahi",
         "S. Tjoa",
         "Keith S. Jones",
-        "Akbar Siami Namin"
+        "A. Namin"
       ],
       "venue": "IEEE Access",
       "link": "https://doi.org/10.1109/ACCESS.2026.3694817",
@@ -48,7 +48,7 @@ var publicationsData = {
       "venue": "Annual International Computer Software and Applications Conference",
       "link": "https://arxiv.org/abs/2507.10758",
       "doi": "10.1109/COMPSAC65507.2025.00252",
-      "citationCount": 3
+      "citationCount": 4
     },
     {
       "title": "In-Context and Few-Shots Learning for Forecasting Time Series Data Based on Large Language Models",
@@ -112,7 +112,7 @@ var publicationsData = {
         "S. Gopali",
         "Sima Siami‐Namini",
         "F. Abri",
-        "Akbar Siami Namin"
+        "A. Namin"
       ],
       "venue": "IEEE Access",
       "link": "https://doi.org/10.1109/ACCESS.2024.3447354",
@@ -124,7 +124,7 @@ var publicationsData = {
       "authors": [
         "S. Gopali",
         "F. Abri",
-        "Akbar Siami Namin",
+        "A. Namin",
         "Keith S. Jones"
       ],
       "venue": "IEEE Access",
@@ -146,7 +146,7 @@ var publicationsData = {
       "venue": "Annual International Computer Software and Applications Conference",
       "link": "https://arxiv.org/abs/2306.17338",
       "doi": "10.1109/COMPSAC57700.2023.00199",
-      "citationCount": 26
+      "citationCount": 27
     }
   ],
   "2022": [
@@ -159,7 +159,7 @@ var publicationsData = {
       "venue": "Electronics",
       "link": "https://doi.org/10.3390/electronics11193205",
       "doi": "10.3390/electronics11193205",
-      "citationCount": 25
+      "citationCount": 27
     },
     {
       "title": "Vulnerability Detection in Smart Contracts Using Deep Learning",
@@ -188,7 +188,7 @@ var publicationsData = {
       "venue": "2021 IEEE International Conference on Big Data (Big Data)",
       "link": "https://doi.org/10.1109/BigData52589.2021.9671488",
       "doi": "10.1109/BigData52589.2021.9671488",
-      "citationCount": 82
+      "citationCount": 83
     },
     {
       "title": "A Comparative Study of Detecting Anomalies in Time Series Data Using LSTM and TCN Models",
@@ -201,7 +201,7 @@ var publicationsData = {
       "venue": "arXiv.org",
       "link": "https://arxiv.org/abs/2112.09293",
       "doi": "",
-      "citationCount": 19
+      "citationCount": 20
     },
     {
       "title": "HyPA: A Hybrid Password-Based Authentication Mechanism",
@@ -225,7 +225,7 @@ var publicationsData = {
         "I. R. Rao",
         "L. Reddy",
         "S. Gopali",
-        "V. B",
+        "V. B.",
         "Raman",
         "T. Ramana",
         "D. Biiaskar",
