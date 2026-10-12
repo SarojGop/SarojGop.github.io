@@ -48,7 +48,7 @@ var publicationsData = {
       "venue": "Annual International Computer Software and Applications Conference",
       "link": "https://arxiv.org/abs/2507.10758",
       "doi": "10.1109/COMPSAC65507.2025.00252",
-      "citationCount": 4
+      "citationCount": 5
     },
     {
       "title": "In-Context and Few-Shots Learning for Forecasting Time Series Data Based on Large Language Models",
@@ -104,7 +104,7 @@ var publicationsData = {
       "venue": "ACM Symposium on Applied Computing",
       "link": "https://arxiv.org/abs/2404.09802",
       "doi": "10.1145/3605098.3636164",
-      "citationCount": 11
+      "citationCount": 12
     },
     {
       "title": "A Comparative Multivariate Analysis of VAR and Deep Learning-Based Models for Forecasting Volatile Time Series Data",
@@ -173,7 +173,7 @@ var publicationsData = {
       "venue": "Annual International Computer Software and Applications Conference",
       "link": "https://doi.org/10.1109/COMPSAC54236.2022.00197",
       "doi": "10.1109/COMPSAC54236.2022.00197",
-      "citationCount": 9
+      "citationCount": 10
     }
   ],
   "2021": [
@@ -188,7 +188,7 @@ var publicationsData = {
       "venue": "2021 IEEE International Conference on Big Data (Big Data)",
       "link": "https://doi.org/10.1109/BigData52589.2021.9671488",
       "doi": "10.1109/BigData52589.2021.9671488",
-      "citationCount": 83
+      "citationCount": 84
     },
     {
       "title": "A Comparative Study of Detecting Anomalies in Time Series Data Using LSTM and TCN Models",
